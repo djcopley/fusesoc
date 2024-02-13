@@ -3,7 +3,6 @@
 # SPDX-License-Identifier: BSD-2-Clause
 
 import copy
-
 # FIXME: Add IP-XACT support
 import logging
 import os

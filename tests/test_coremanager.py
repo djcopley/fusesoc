@@ -2,8 +2,6 @@
 # Licensed under the 2-Clause BSD License, see LICENSE for details.
 # SPDX-License-Identifier: BSD-2-Clause
 
-import pytest
-
 
 def test_deptree(tmp_path):
     import os

@@ -3,8 +3,6 @@
 # SPDX-License-Identifier: BSD-2-Clause
 
 import logging
-import os.path
-import shutil
 import subprocess
 
 from ..provider.provider import Provider

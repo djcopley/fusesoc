@@ -9,11 +9,9 @@ import subprocess
 import tempfile
 from argparse import Namespace
 
-from test_common import cache_root, cores_root, library_root
-
 from fusesoc.config import Config
 from fusesoc.fusesoc import Fusesoc
-from fusesoc.librarymanager import Library
+from test_common import cache_root, cores_root, library_root
 
 build_root = "test_build_root"
 
@@ -61,7 +59,6 @@ def test_library_add(caplog):
     import tempfile
 
     from fusesoc.coremanager import CoreManager
-    from fusesoc.librarymanager import LibraryManager
     from fusesoc.main import add_library
 
     with tempfile.TemporaryDirectory() as td:

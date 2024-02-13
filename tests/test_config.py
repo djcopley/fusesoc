@@ -6,9 +6,8 @@ import os
 import os.path
 import tempfile
 
-from test_common import cache_root, cores_root, library_root
-
 from fusesoc.config import Config
+from test_common import cache_root, cores_root, library_root
 
 build_root = "test_build_root"
 

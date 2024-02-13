@@ -6,11 +6,10 @@ import logging
 import os
 from importlib import import_module
 
-from .config import Config
-from .coremanager import CoreManager, DependencyError
+from .coremanager import CoreManager
 from .edalizer import Edalizer
 from .librarymanager import Library, LibraryManager
-from .utils import Launcher, setup_logging, yaml_fread
+from .utils import setup_logging, yaml_fread
 from .vlnv import Vlnv
 
 try:
