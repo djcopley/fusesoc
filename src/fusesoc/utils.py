@@ -8,6 +8,8 @@ import sys
 import warnings
 
 import yaml
+import yaml.parser
+import yaml.scanner
 
 try:
     from yaml import CSafeDumper as YamlDumper
