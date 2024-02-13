@@ -58,6 +58,6 @@ setup(
         "fastjsonschema",
         "jsonschema2md",
     ],
-    # Supported Python versions: 3.6+
-    python_requires=">=3.6, <4",
+    # Supported Python versions: 3.8+
+    python_requires=">=3.8, <4",
 )

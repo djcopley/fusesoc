@@ -23,12 +23,12 @@ jobs:
         # https://github.com/olofk/fusesoc/issues/528
         #- { icon: 🧊, name: windows-latest }
         pyver:
-          - '3.6'
-          - '3.7'
-          - '3.8'
-          - '3.9'
-          - '3.10'
-          - '3.11.0-alpha - 3.11.0'
+          - "3.8"
+          - "3.9"
+          - "3.10"
+          - "3.11"
+          - "3.12"
+
     runs-on: ${{ matrix.os.name }}
     name: ${{ matrix.os.icon }} ${{ matrix.os.name }} | ${{ matrix.pyver }}
     steps:
