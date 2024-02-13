@@ -4,7 +4,7 @@
 
 import logging
 
-from fusesoc.capi2.core import Core as Capi2Core
+from .capi2.core import Core as Capi2Core
 
 logger = logging.getLogger(__name__)
 

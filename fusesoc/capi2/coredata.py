@@ -4,7 +4,7 @@
 
 import copy
 
-from fusesoc.capi2.exprs import Exprs
+from ..capi2.exprs import Exprs
 
 
 class CoreData:

@@ -5,8 +5,8 @@
 import logging
 import sys
 
-from fusesoc.provider.provider import Provider
-from fusesoc.utils import Launcher, cygpath, is_mingw
+from ..provider.provider import Provider
+from ..utils import Launcher, cygpath, is_mingw
 
 logger = logging.getLogger(__name__)
 

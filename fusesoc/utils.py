@@ -16,7 +16,7 @@ except ImportError:
     from yaml import SafeDumper as YamlDumper
     from yaml import SafeLoader as YamlLoader
 
-from fusesoc.capi2.inheritance import Inheritance
+from .capi2.inheritance import Inheritance
 
 logger = logging.getLogger(__name__)
 

@@ -4,7 +4,7 @@
 
 import sys
 
-from fusesoc import utils
+from .. import utils
 
 
 class Generator:

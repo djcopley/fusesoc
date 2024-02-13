@@ -3,8 +3,8 @@
 # SPDX-License-Identifier: BSD-2-Clause
 
 # FIXME: Read schema from file or internet instead
-from fusesoc.capi2.json_schema import capi2_schema
-from fusesoc.parser.coreparser import CoreParser
+from ..capi2.json_schema import capi2_schema
+from ..parser.coreparser import CoreParser
 
 
 class Core2Parser(CoreParser):

@@ -6,12 +6,12 @@ import logging
 import os
 from importlib import import_module
 
-from fusesoc.config import Config
-from fusesoc.coremanager import CoreManager, DependencyError
-from fusesoc.edalizer import Edalizer
-from fusesoc.librarymanager import Library, LibraryManager
-from fusesoc.utils import Launcher, setup_logging, yaml_fread
-from fusesoc.vlnv import Vlnv
+from .config import Config
+from .coremanager import CoreManager, DependencyError
+from .edalizer import Edalizer
+from .librarymanager import Library, LibraryManager
+from .utils import Launcher, setup_logging, yaml_fread
+from .vlnv import Vlnv
 
 try:
     from edalize.edatool import get_edatool

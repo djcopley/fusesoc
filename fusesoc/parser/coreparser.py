@@ -5,7 +5,7 @@
 import fastjsonschema
 import yaml
 
-from fusesoc import utils
+from .. import utils
 
 
 class CoreParser:

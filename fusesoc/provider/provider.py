@@ -7,7 +7,7 @@ import os
 import shutil
 import stat
 
-from fusesoc.utils import Launcher
+from ..utils import Launcher
 
 logger = logging.getLogger(__name__)
 

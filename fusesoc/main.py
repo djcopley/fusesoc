@@ -12,7 +12,7 @@ import warnings
 from pathlib import Path
 
 try:
-    from fusesoc.version import version as __version__
+    from .version import version as __version__
 except ImportError:
     __version__ = "unknown"
 
@@ -25,10 +25,10 @@ if os.path.exists(os.path.join(fusesocdir, "fusesoc")):
 
 import logging
 
-from fusesoc.config import Config
-from fusesoc.coremanager import DependencyError
-from fusesoc.fusesoc import Fusesoc
-from fusesoc.librarymanager import Library
+from .config import Config
+from .coremanager import DependencyError
+from .fusesoc import Fusesoc
+from .librarymanager import Library
 
 logger = logging.getLogger(__name__)
 

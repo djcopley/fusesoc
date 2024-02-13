@@ -7,7 +7,7 @@ import os.path
 import sys
 import tarfile
 
-from fusesoc.provider.provider import Provider
+from ..provider.provider import Provider
 
 logger = logging.getLogger(__name__)
 

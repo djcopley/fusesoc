@@ -5,7 +5,7 @@
 import copy
 import re
 
-from fusesoc import utils
+from .. import utils
 
 
 class Inheritance:

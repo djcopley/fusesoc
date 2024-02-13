@@ -8,7 +8,7 @@ import os
 from configparser import ConfigParser as CP
 from pathlib import Path
 
-from fusesoc.librarymanager import Library
+from .librarymanager import Library
 
 logger = logging.getLogger(__name__)
 

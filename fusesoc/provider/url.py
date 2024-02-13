@@ -19,7 +19,7 @@ else:
     from urllib2 import URLError
     from urllib2 import HTTPError
 
-from fusesoc.provider.provider import Provider
+from ..provider.provider import Provider
 
 
 class Url(Provider):

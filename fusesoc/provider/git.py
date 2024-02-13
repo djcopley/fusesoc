@@ -7,8 +7,8 @@ import os.path
 import shutil
 import subprocess
 
-from fusesoc.provider.provider import Provider
-from fusesoc.utils import Launcher
+from ..provider.provider import Provider
+from ..utils import Launcher
 
 logger = logging.getLogger(__name__)
 

@@ -13,9 +13,9 @@ from simplesat.pool import Pool
 from simplesat.repository import Repository
 from simplesat.request import Request
 
-from fusesoc.capi2.coreparser import Core2Parser
-from fusesoc.core import Core
-from fusesoc.librarymanager import LibraryManager
+from .capi2.coreparser import Core2Parser
+from .core import Core
+from .librarymanager import LibraryManager
 
 logger = logging.getLogger(__name__)
 

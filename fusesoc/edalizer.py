@@ -10,11 +10,11 @@ import pathlib
 import shutil
 from filecmp import cmp
 
-from fusesoc import utils
-from fusesoc.capi2.coreparser import Core2Parser
-from fusesoc.coremanager import DependencyError
-from fusesoc.utils import merge_dict
-from fusesoc.vlnv import Vlnv
+from . import utils
+from .capi2.coreparser import Core2Parser
+from .coremanager import DependencyError
+from .utils import merge_dict
+from .vlnv import Vlnv
 
 logger = logging.getLogger(__name__)
 
