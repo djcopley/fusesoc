@@ -7,19 +7,13 @@ import os.path
 import shutil
 import sys
 import tarfile
+import urllib.request as urllib
 import zipfile
-
-logger = logging.getLogger(__name__)
-
-if sys.version_info[0] >= 3:
-    import urllib.request as urllib
-    from urllib.error import HTTPError, URLError
-else:
-    import urllib
-    from urllib2 import URLError
-    from urllib2 import HTTPError
+from urllib.error import HTTPError, URLError
 
 from ..provider.provider import Provider
+
+logger = logging.getLogger(__name__)
 
 
 class Url(Provider):

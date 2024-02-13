@@ -4,20 +4,14 @@
 
 import logging
 import os.path
-import sys
 import tarfile
+import urllib.request as urllib
+from urllib.error import URLError
 
 from ..provider.provider import Provider
 
 logger = logging.getLogger(__name__)
 
-if sys.version_info[0] >= 3:
-    import urllib.request as urllib
-    from urllib.error import URLError
-else:
-    import urllib
-
-    from urllib2 import URLError
 
 URL = "https://github.com/{user}/{repo}/archive/{version}.tar.gz"
 
