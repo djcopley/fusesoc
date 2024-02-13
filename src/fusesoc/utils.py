@@ -22,7 +22,7 @@ logger = logging.getLogger(__name__)
 
 
 class Launcher:
-    def __init__(self, cmd, args=[], cwd=None):
+    def __init__(self, cmd, args=(), cwd=None):
         self.cmd = cmd
         self.args = args
         self.cwd = cwd
