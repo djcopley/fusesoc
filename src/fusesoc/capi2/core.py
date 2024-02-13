@@ -264,11 +264,10 @@ class Core:
                 # Remove all key-value-pairs with values that are either bool with
                 # value False or str of length 0
                 attributes = {
-                    k: v
-                    for k, v in attributes.items()
-                    if (type(v) == bool and v == True)
-                    or (type(v) == str and len(v)) > 0
-                    or (type(v) == list and len(v)) > 0
+                    k: v for k, v in attributes.items()
+                    if (type(v) == bool and v == True) or
+                       (type(v) == str and len(v)) > 0 or
+                       (type(v) == list and len(v)) > 0
                 }
 
                 _src_files.append(attributes)

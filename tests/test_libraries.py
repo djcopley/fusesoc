@@ -32,7 +32,6 @@ sync_uri = "https://github.com/fusesoc/fusesoc-cores"
 
 
 def test_library_location():
-
     with tempfile.NamedTemporaryFile(mode="w+") as tcf:
         tcf.write(
             EXAMPLE_CONFIG.format(
@@ -153,7 +152,6 @@ auto-sync = true""".format(
 
 
 def test_library_update(caplog):
-
     clone_target = tempfile.mkdtemp()
 
     subprocess.call(["git", "clone", sync_uri, clone_target])

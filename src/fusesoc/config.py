@@ -49,9 +49,7 @@ class Config:
             env_cores_root = os.getenv("FUSESOC_CORES").split(":")
             env_cores_root.reverse()
 
-        self.libraries = [
-            Library(root, root) for root in env_cores_root
-        ] + self._parse_library()
+        self.libraries = [Library(root, root) for root in env_cores_root] + self._parse_library()
 
         logger.debug("cache_root=" + self.cache_root)
         logger.debug("library_root=" + self.library_root)
