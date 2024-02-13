@@ -157,7 +157,7 @@ class Fusesoc:
         except SyntaxError as e:
             raise RuntimeError(e.msg)
         except RuntimeError as e:
-            raise RuntimeError("Setup failed : {}".format(str(e)))
+            raise RuntimeError(f"Setup failed : {str(e)}")
 
         if os.path.exists(edam_file):
             old_edam = yaml_fread(edam_file, self.config.resolve_env_vars_early)

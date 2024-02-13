@@ -199,7 +199,7 @@ class Edalizer:
         for core in self.cores:
             snippet = {}
 
-            logger.debug("Collecting EDAM parameters from {}".format(str(core.name)))
+            logger.debug(f"Collecting EDAM parameters from {str(core.name)}")
             _flags = self._core_flags(core)
 
             # Extract direct dependencies
@@ -345,7 +345,7 @@ class Edalizer:
                     )
                 except KeyError as e:
                     raise RuntimeError(
-                        "Invalid data type {} for parameter '{}'".format(str(e), name)
+                        f"Invalid data type {str(e)} for parameter '{name}'"
                     )
                 param_type_map[name.replace("-", "_")] = _paramtype
             else:
